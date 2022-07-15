@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import { View, Text } from 'react-native'
 
 import Swiper from 'react-native-deck-swiper'
-import photoCards from '../../../data/photoCards'
 import Card from '../../atoms/card'
 import OverlayLabel from '../../atoms/overlayLabel'
 import ChoiceContainer from '../../molecules/choiceContainer'
@@ -12,8 +11,7 @@ import styles from './styles'
 const SwiperCard = ({useSwiper, photoCards, stylesContainer}) => {     
 
     return ( 
-        <Swiper
-            ref={useSwiper}
+        <Swiper ref={useSwiper}
             animateCardOpacity
             containerStyle={stylesContainer}
             cards={photoCards}

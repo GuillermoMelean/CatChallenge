@@ -36,6 +36,7 @@ Card.propTypes = {
         photo: ImageSourcePropType,
         name: string,
         age: number,
+        breed: string
     }).isRequired,
 }
 export default Card
